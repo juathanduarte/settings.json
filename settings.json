@@ -1,0 +1,156 @@
+{
+    "editor.fontFamily": "Fira Code", // Fonte
+    "workbench.colorTheme": "Dracula", // Tema
+    "editor.fontLigatures": true, // Ligadura de fonte
+    "editor.fontSize": 14, // Tamanho da fonte
+    "editor.lineHeight": 1.5, // Espaçamento entre linhas
+    "editor.tabSize": 2, // Tamanho da tabulação
+    "editor.renderLineHighlight": "all", // Destacar linha atual
+    "workbench.editor.labelFormat": "short", // Nome do arquivo na aba
+    "explorer.compactFolders": false, // Compactar pastas
+    "breadcrumbs.enabled": true, // Navegação por breadcrumbs
+    "editor.minimap.enabled": false, // esconder o minimap da direita
+    "editor.scrollbar.horizontal": "hidden", // esconder a barra de rolagem horizontal
+    "editor.scrollbar.vertical": "visible", // esconder a barra de rolagem vertical
+    "editor.wordWrap": "on", // Quebra de linha automática
+    "editor.rulers": [100], // Linhas verticais de destaque (100)
+    "editor.guides.bracketPairs": true, // Destacar parênteses e chaves
+    // "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      // "source.fixAll": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit",
+      "source.addMissingImports": "explicit"
+    },
+    "editor.formatOnPaste": true, // Formatar ao colar
+    "[python]": {
+      // Configurações específicas para Python
+      "editor.formatOnType": true
+    },
+    "workbench.iconTheme": "material-icon-theme", // Ícones na barra lateral
+    "explorer.confirmDelete": false, // Confirmar exclusão de arquivos
+    "explorer.confirmDragAndDrop": false, // Confirmar mover arquivos
+    "settingsSync.ignoredSettings": [], // Configurações ignoradas pelo Sync
+    "git.enableSmartCommit": true, // Habilitar Smart Commit
+    "typescript.updateImportsOnFileMove.enabled": "always", // Atualizar imports ao mover arquivos
+    "javascript.updateImportsOnFileMove.enabled": "always", // Atualizar imports ao mover arquivos
+    "security.workspace.trust.untrustedFiles": "open", // Abrir arquivos não confiáveis
+    "debug.onTaskErrors": "debugAnyway", // Depurar mesmo com erros
+    "gitlens.advanced.messages": {
+      // Mensagens do GitLens
+      "suppressLineUncommittedWarning": true
+    },
+    "C_Cpp.errorSquiggles": "enabled", // Sublinhar erros de C/C++
+    "git.confirmSync": false, // Confirmar ao sincronizar
+    "c-cpp-compile-run.c-flags": "-Wall -Wextra -lpthread -lm", // Flags de compilação de C/C++
+    "github.copilot.enable": {
+      // Habilitar GitHub Copilot
+      "*": true,
+      "yaml": false,
+      "plaintext": true,
+      "markdown": true,
+      "scminput": false
+    },
+    "liveServer.settings.donotVerifyTags": true, // Não verificar tags HTML
+    "liveServer.settings.donotShowInfoMsg": true, // Não mostrar mensagem de informações
+    "git.openRepositoryInParentFolders": "always", // Abrir repositório na pasta pai
+    "eslint.codeActionsOnSave.rules": null, // Desabilitar correções do ESLint
+    "eslint.validate": [
+      // Validar arquivos com ESLint
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+    "workbench.startupEditor": "none", // Não abrir arquivo ao iniciar
+    "json.schemas": [], // Desabilitar sugestões de JSON
+    "terminal.integrated.env.linux": {}, // Variáveis de ambiente do terminal
+    "diffEditor.ignoreTrimWhitespace": false, // Ignorar espaços em branco no Diff
+    "code-runner.executorMap": {
+      // Configurações do Code Runner
+      "javascript": "node",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "c": "cd $dir && gcc $fileName -fopenmp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "zig": "zig run",
+      "cpp": "cd $dir && g++ $fileName -fopenmp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "php": "php",
+      "python": "python -u",
+      "perl": "perl",
+      "perl6": "perl6",
+      "ruby": "ruby",
+      "go": "go run",
+      "lua": "lua",
+      "groovy": "groovy",
+      "powershell": "powershell -ExecutionPolicy ByPass -File",
+      "bat": "cmd /c",
+      "shellscript": "bash",
+      "fsharp": "fsi",
+      "csharp": "scriptcs",
+      "vbscript": "cscript //Nologo",
+      "typescript": "ts-node",
+      "coffeescript": "coffee",
+      "scala": "scala",
+      "swift": "swift",
+      "julia": "julia",
+      "crystal": "crystal",
+      "ocaml": "ocaml",
+      "r": "Rscript",
+      "applescript": "osascript",
+      "clojure": "lein exec",
+      "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+      "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+      "racket": "racket",
+      "scheme": "csi -script",
+      "ahk": "autohotkey",
+      "autoit": "autoit3",
+      "dart": "dart",
+      "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+      "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+      "haskell": "runghc",
+      "nim": "nim compile --verbosity:0 --hints:off --run",
+      "lisp": "sbcl --script",
+      "kit": "kitc --run",
+      "v": "v run",
+      "sass": "sass --style expanded",
+      "scss": "scss --style expanded",
+      "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+      "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+      "sml": "cd $dir && sml $fileName",
+      "mojo": "mojo run"
+    },
+    "files.associations": {
+      ".sequelizerc": "javascript",
+      ".stylelintrc": "json",
+      ".prettierrc": "json",
+      "*.tsx": "typescriptreact"
+    },
+    "explorer.fileNesting.enabled": true, // Agrupar arquivos por extensão
+    "explorer.fileNesting.patterns": {
+      // Agrupar arquivos por extensão
+      "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+      "tailwind.config.js": "tailwind.config*, postcss.config*",
+      ".env.local": ".env*",
+      ".env": ".env*"
+    },
+  
+    "html.completion.attributeDefaultValue": "singlequotes", // Aspas simples em HTML
+    "files.trimTrailingWhitespace": true, // Tocar som ao adicionar breakpoint
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true, // Espaço entre chaves
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true, // Espaço entre chaves
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true, // Espaço entre chaves
+    "terminal.integrated.env.windows": {}, // Variáveis de ambiente do terminal
+    "terminal.integrated.fontSize": 14, // Tamanho da fonte do terminal
+    "window.zoomLevel": -1,
+    "editor.stickyScroll.enabled": true,
+    "workbench.settings.applyToAllProfiles": [
+      "editor.stickyScroll.enabled"
+    ],
+    "accessibility.signals.lineHasBreakpoint": {
+      "sound": "on"
+    }, // Manter rolagem ao editar notebooks
+  }
+  
